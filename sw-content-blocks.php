@@ -11,6 +11,23 @@ Text Domain: sw-content-blocks
 
 if (!defined('ABSPATH')) exit;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$swUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/paveltravnicek/sw-content-blocks/',
+	__FILE__,
+	'sw-content-blocks'
+);
+
+$swUpdateChecker->setBranch('main');
+$swUpdateChecker->getVcsApi()->enableReleaseAssets('/\.zip$/i');
+
 class SW_Content_Blocks {
     const CPT = 'sw_content_block';
     const OPT_LAYOUT = 'swcb_default_layout';
