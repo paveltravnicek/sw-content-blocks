@@ -1,9 +1,12 @@
 <?php
 /*
-Plugin Name: SW Content Blocks
+Plugin Name: Obsahové bloky
 Description: Obsahové bloky s plánováním zobrazení, nastavením výpisu a shortcode.
-Version: 1.4.1
+Version: 1.0
 Author: Smart Websites
+Author URI: https://smart-websites.cz
+Update URI: https://github.com/paveltravnicek/sw-content-blocks/
+Text Domain: sw-content-blocks
 */
 
 if (!defined('ABSPATH')) exit;
