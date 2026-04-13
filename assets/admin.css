@@ -123,7 +123,7 @@
 }
 
 .swcb-cards--spaced {
-  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .swcb-card {
@@ -233,5 +233,127 @@
 
   .swcb-card {
     padding: 18px;
+  }
+}
+
+.swcb-card--licence {
+  margin-bottom: 20px;
+}
+
+.swcb-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.swcb-card__head h2 {
+  margin: 0 0 6px;
+}
+
+.swcb-intro {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.swcb-licence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.swcb-licence-item {
+  background: #f6f8fb;
+  border: 1px solid #d7dfeb;
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+.swcb-licence-item strong,
+.swcb-licence-item span {
+  display: block;
+}
+
+.swcb-licence-item strong {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.swcb-licence-item span {
+  color: #5f6b7a;
+}
+
+.swcb-licence-label {
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.swcb-licence-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.swcb-licence-badge--active {
+  background: rgba(0, 163, 42, 0.12);
+  color: #06752f;
+}
+
+.swcb-licence-badge--inactive {
+  background: rgba(214, 54, 56, 0.12);
+  color: #b42318;
+}
+
+.swcb-license-form-wrap {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.swcb-license-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.swcb-license-form .regular-text {
+  width: 100%;
+  max-width: 420px;
+}
+
+.swcb-license-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.swcb-note {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #f6f8fb;
+  border: 1px solid #d7dfeb;
+}
+
+form.is-readonly {
+  opacity: .88;
+}
+
+@media (max-width: 782px) {
+  .swcb-card__head {
+    flex-direction: column;
+  }
+
+  .swcb-licence-badge {
+    align-self: flex-start;
   }
 }
