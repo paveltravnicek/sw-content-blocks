@@ -433,7 +433,7 @@ final class SW_Content_Blocks {
         echo '<div class="swcb-hero__content">';
         echo '<span class="swcb-badge">Smart Websites</span>';
         echo '<h1>Nastavení výpisu</h1>';
-        echo '<p>Výchozí layout, vzhled a počet položek pro shortcode, pokud nejsou jednotlivé parametry zadané přímo ve výpisu.</p>';
+        echo '<p>Obsahové bloky s plánováním zobrazení, nastavením výpisu a shortcode.</p>';
         echo '</div>';
         echo '<div class="swcb-hero__meta">';
         echo '<div class="swcb-stat">';
